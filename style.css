@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2d9ddd;
+    width: 100%;
+    min-height: 100%;
+}
+
+.header{
+    border-bottom: 1px solid black;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header>img{
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+}
+.logo >img{
+    position:absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.container{
+    background-color: #fff;
+    width: 50vw;
+    position: relative;
+    min-height: 70vh;
+    margin: auto;
+    margin-top: 15vh;
+    border-radius: 9px;
+}
+
+.today-info{
+    border-bottom: 1px solid black;
+    min-height: fit-content;
+}
+
+.upper-info{
+    padding:5px 10px;
+    display: flex;
+}
+.upper-info>h1{
+    margin:0 10px;
+    color: #329cda;
+}
+
+.lower-info{    
+    margin:0 10px;
+    padding:5px 10px;    
+    color: #00000070;
+    font-size: 0.8rem;
+}
+
+.tasks{
+    margin: 10%;
+
+}
+#inputtext{
+    display: flex;
+    border-radius: 9px;
+}
+
+#input{
+    width:80%;   
+    border-radius: 9px 0 0 9px;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.452);
+    border-style: none;
+}
+
+#submit{
+    width: 20%;
+    border-radius:0 9px 9px 0;
+    background-color: #2d9ddd;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+#submit:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: #13567c;
+}
+#todoList >li{
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom:1px solid gray ;
+}
+
+#todoList > li > button {
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #30b3ff;
+    border-style: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 80vw;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .container{
+        width: 95vw;
+    }
+  }
